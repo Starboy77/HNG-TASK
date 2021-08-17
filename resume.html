@@ -16,12 +16,14 @@
 	@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Varela+Round&display=swap');
 
 
-	body {font-family: verdana;}
-	.name {background-color:;}
+	body {font-family: verdana,'Varela Round', sans-serif;}
+	.name {background-color: #ccc;}
 	.skill {font-family: 'Varela Round', sans-serif;
- 			background-color:}
+ 			}
 	.general {display: flex;
 			  flex-flow: row nowrap;
+			  width: 80%;
+			  box-shadow: 15px 11px 11px black;
 			}
 	.about {width:30%;
             background-color:#333;
@@ -51,26 +53,25 @@
 	#intro {font-size: 1.5em;
 	        word-spacing: 3px;
 	       }
-	.qualification{display: flex;
-		  flex-flow: row nowrap;
-		  background-color: #fff;
-		 }
-	.leftcon {width:20%;
+	.leftcon {background-color: #fff
 		   color:#fa5323;
-		   
-		   }
-	.rightcon {width:50%}
-	.leftcon h3 {height:200px;
-				border-right: 3px solid green;
+		    }
+	.card {border-right: 3px solid green;
+		   border-left: 3px solid green;
+		   font-size: 1.34em;
+		 }
+	.leftcon h3 {color:#fa5323;
 			    }
-	.rightcon ul{height:200px;}
 	.footer {text-align: center;
-			 padding: 40px;
-			 background-color:#bbb;
+			 
+			 background-color:#ddd;
 			 }
+	#overall {background-image:linear-gradient(to bottom right,silver, beige);
+	         }
 </style>
 
 <body>
+<div id="overall">
 	<div class="container-fluid general">
 		<div class="well about">
 				<div class="contact">
@@ -103,7 +104,7 @@
 				</div>
 		</div>
 
-		<div class="content">
+		<div class="well content">
 				<div class="well name page header">
 						<h1 style="font-size: 3em;color: green">Majoyegbe Ayomide</h1>
 						<h3><strong>Front-End Engineer</strong></h3>
@@ -112,40 +113,44 @@
 							<h2 style="color:#fa5323">SUMMARY</h2>
 							My love for web development knows no bound. I started my career in web development since I was a child and now i believe I 
 							have the neccesary skills, technique, exposure and spirit to excel in my chosen career path.
-							Diligence and Team work is what I stand for and I will never compromise these for anything else as I believe that <q> a good name is better than Gold!</q>.
+							Diligence and Team work is what I stand for and I will never compromise these for anything else as I believe that <strong><q> a good name is better than Gold!</q>.</strong>
 						</div>
 				</div>
-				<div class="well skill qualification">
+				<div class="well skill">
 						<div class="leftcon">
-							<h3>EXPERIENCE</h3><hr>
-							<h3> EDUCATION</h3> 
-							<h3>SKILLS</h3>
-						</div>
-						<div class="rightcon">
-							<ul>
-								<li>-Previously worked as a freelancer and teacher in web development.</li>
-								<li>-I also participated as an intern at <a href="internship.zuri.team"> ZURI/HNG Internship.</a></li>
-								<li>-Practiced with a lot of software Engineers at HNG/ZURI.</li>
-							</ul><hr>
-
-							<ul>
-								<li>-Undergraduate of the University of Lagos studying Chemical Engineering [B.SC in view]</li>
-								<li>-Appreciable knowledge in designing languages as stated at <q>TECHNIQUE</q> section of side bar.</li>
-								<li>-Waec Certification/O' level.</li>
-							</ul>
-							<ul>
-								<li>-Strong Verbal Communication.</li>
-								<li>-I possess Good Leadership Quality.</li>
-								<li>-I am a Good team player.</li>
-							</ul>
+							<div class="card">
+								<h3>EXPERIENCE</h3>
+								<ul>
+									<li>-Previously worked as a freelancer and teacher in web development.</li>
+									<li>-I also participated as an intern at <a href="internship.zuri.team"> ZURI/HNG Internship.</a></li>
+									<li>-Practiced with a lot of software Engineers at HNG/ZURI.</li>
+								</ul>
+							</div>
+							<div class="card">
+								<h3> EDUCATION</h3> 
+								<ul>
+									<li>-Undergraduate of the University of Lagos studying Chemical Engineering [B.SC in view]</li>
+									<li>-Appreciable knowledge in designing languages as stated at <q>TECHNIQUE</q> section of side bar.</li>
+									<li>-Waec Certification/O' level.</li>
+								</ul>
+						    </div>
+							<div class="card">
+								<h3>SKILLS</h3>
+								<ul>
+									<li>-Strong Verbal Communication.</li>
+									<li>-I possess Good Leadership Quality.</li>
+									<li>-I am a Good team player.</li>
+								</ul>
+							</div>
 						</div>
 				</div>
-				
+				<div class="footer well"><i class="far fa-copyright"></i>Copyright 2021.</div>
 		</div>
-
+				
 	</div>
-<div class="footer"><i class="far fa-copyright"></i>Copyright 2021.</</div>
 		
+		
+</div>		
 
 
 </body>
