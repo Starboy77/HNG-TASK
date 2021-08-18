@@ -20,16 +20,15 @@
 	.name {background-color: #ccc;}
 	.skill {font-family: 'Varela Round', sans-serif;
  			}
-	.general {display: flex;
-			  flex-flow: row nowrap;
+	.general {     flex-flow: row nowrap;
 			  width: 80%;
 			  box-shadow: 15px 11px 11px black;
 			}
-	.about {width:30%;
+	.about {
             background-color:#333;
             color: white;
 	       }
-	.content {width: 70%;
+	.content {
               background-color:#f1f1f1;
               font-family: 'Barlow', sans-serif
           }
@@ -72,8 +71,8 @@
 
 <body>
 <div id="overall">
-	<div class="container-fluid general">
-		<div class="well about">
+	<div class="container-fluid row general">
+		<div class="well col-xs-4 about">
 				<div class="contact">
 					<h2 style="text-align: center">About Me</h2>
 						<img class="img-responsive" src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg" alt="gt">
@@ -104,7 +103,7 @@
 				</div>
 		</div>
 
-		<div class="well content">
+		<div class="well col-xs-8 content">
 				<div class="well name page header">
 						<h1 style="font-size: 3em;color: green">Majoyegbe Ayomide</h1>
 						<h3><strong>Front-End Engineer</strong></h3>
